@@ -1,0 +1,227 @@
+/* Colores y variables básicas */
+:root {
+  --color-principal: #0077b6;      /* Azul elegante */
+  --color-secundario: #90e0ef;     /* Azul claro */
+  --color-acento: #ff477e;         /* Rosa alegre */
+  --color-fondo: #f0f4ff;          /* Fondo claro */
+  --color-texto: #222;             /* Texto base */
+  --color-hover: #00b4d8;          /* Efecto al pasar el ratón */
+
+  --borde-redondeado: 12px;
+  --transicion: 0.3s ease;
+}
+
+/* ESTILOS GENERALES */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, var(--color-fondo), #e1f7f5);
+  color: var(--color-texto);
+  font-size: 16px;
+  line-height: 1.6;
+  padding: 0 1rem;
+
+}
+
+.contenedor {
+  max-width: 900px;        /* Ancho máximo para no ocupar toda la pantalla */
+  margin: 2rem auto;       /* Centrar horizontalmente con margen arriba y abajo */
+  padding: 2rem;           /* Espacio interior */
+  background-color: white; /* Fondo blanco para destacar */
+  border: 2px solid var(--color-principal); /* Borde elegante */
+  border-radius: 16px;     /* Bordes redondeados */
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1); /* Sombra sutil para efecto de profundidad */
+}
+
+/* ENCABEZADO */
+header {
+  background: linear-gradient(90deg, #caf0f8, #ade8f4);
+  color: #023047;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  border-bottom: 2px solid var(--color-secundario);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* LOGO Y TÍTULO */
+#main_title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+#logo-web {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  border: 2px solid var(--color-principal);
+  object-fit: cover;
+}
+
+/* MENÚ DE NAVEGACIÓN */
+nav {
+  margin-top: 1rem;
+}
+
+nav a {
+  color: var(--color-principal);
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color var(--transicion), transform 0.2s;
+}
+
+nav a:hover {
+  color: var(--color-acento);
+  transform: scale(1.05);
+}
+
+/* TÍTULOS Y TEXTOS */
+h1, h2 {
+  color: var(--color-principal);
+  margin-top: 2rem;
+  text-align:center;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+/* LISTAS */
+ul {
+  padding-left: 1.2rem;
+}
+#desarrolladores {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.desarrolladores-lista {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap; /* Para que baje si no cabe en una línea */
+  margin-top: 1.5rem;
+}
+
+.desarrollador-card {
+  background-color: white;
+  border: 2px solid var(--color-principal);
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  min-width: 140px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.desarrollador-card a {
+  color: var(--color-principal);
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.desarrollador-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.desarrollador-card a:hover {
+  color: var(--color-acento);
+}
+
+/* FORMULARIO DE CONTACTO */
+form {
+  max-width: 500px;
+  margin: 2rem auto;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: var(--borde-redondeado);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+form input,
+form select,
+form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: var(--borde-redondeado);
+  font-family: inherit;
+}
+
+/* BOTÓN DE ENVÍO */
+form button {
+  margin-top: 1.5rem;
+  background-color: var(--color-principal);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: var(--borde-redondeado);
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color var(--transicion), transform 0.2s;
+}
+
+form button:hover {
+  background-color: var(--color-hover);
+  transform: translateY(-2px);
+}
+
+/* MENSAJE DE ÉXITO */
+.mensaje-enviado {
+  margin-top: 1rem;
+  color: green;
+  font-weight: bold;
+}
+
+/* PIE DE PÁGINA */
+footer {
+  background-color: #f7f7f7;
+  padding: 2rem;
+  text-align: center;
+  margin-top: 2rem;
+  border-top: 2px solid var(--color-secundario);
+}
+
+footer h1 {
+  font-size: 1.2rem;
+  color: var(--color-principal);
+}
+
+footer a {
+  color: var(--color-principal);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--color-acento);
+}
+
+#contacto-info p {
+  margin: 0.5rem 0;
+}
+
+/* MAPA */
+iframe {
+  width: 100%;
+  max-width: 300px;
+  height: 150px;
+  border: none;
+  margin: 1rem auto;
+}
+
+li{
+    display: inline;
+    text-align: justify;
+}
+

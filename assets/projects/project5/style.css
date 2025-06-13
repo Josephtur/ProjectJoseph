@@ -1,0 +1,118 @@
+*{
+margin: 0;
+padding: 0;
+}
+
+body{
+    background-color: aquamarine;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    background-image: url(https://i.pinimg.com/736x/67/30/e5/6730e58464ccf5d714014a496ce8b7e3.jpg); /* Reemplaza con la ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/*CONTENEDOR PRINCIPAL CENTRADO*/
+.container{
+    width: 80%; /*Ocupa el 80% del ancho del viewport*/
+    margin: 50px auto; /*Margen superior e inferior de 50px, y centrado horizontal*/
+}
+
+/*CAJA DE CONTACTO CON FONDO BLANCO Y LAYOUT EN FLEX*/
+.contact-box{
+    background: #fff;
+    display: flex; /*Disposicion en linea a sus hijos*/
+}
+
+.contact-left{
+    flex-basis: 40%; /*OCUPA EL 40% DEL ESPACIO DISPONIBLE EN EL CONTACT-BOX */
+    padding: 60px; /*relleno interno uniforme de 40px%*/
+    
+}
+
+.contact-right{
+    flex-basis: 40%;
+    padding: 60px;
+    background: #1c00b5;
+    color: white;
+}
+
+/*Estilo general para todos titulos <h1>*/
+h1 {
+    margin-bottom: 10px; /*Separacion inferior de 10px*/
+}
+
+/*Parrafos dentro de .container*/
+.container p{
+    margin-bottom: 40px; /*separacion inferior de 40px*/
+}
+
+/*Filas de inputs dispuestas en flex y espaciados*/
+.input-row{
+    display: flex;
+    justify-content: space-between; /*espacio igual entre elementos*/
+    margin-bottom: 20px;
+}
+
+/*cada grupo de input dentro del .input-row*/
+.input-row .input-group{
+    flex-basis: 45%; /*Cda grupo ocupa el 45% del ancho de la fila*/
+}
+
+/*Estilo generico para todos los input*/
+input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc; /*Linea inferior gris*/
+    outline none; /*Sin contorno al enfocarlo*/
+    padding-bottom: 5px; /*Relleno infeior de 5px*/
+}
+
+/*Estilo para <texarea>*/
+
+textarea{
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    box-sizing: border-box; /*Incluye padding y border*/
+}
+
+/*Estilo a las etiquetas*/
+
+label{
+    margin-bottom: 6px; /*Separacion inferior 6px*/
+    display: block; /*se muestran como bloque para respetar imagenes*/
+    color: #1c00b5;
+}
+
+/*Estilo para los botones*/
+
+button{
+    background: #3604cb;
+    width: 100px;
+    border: none;
+    outline: none;/*sin contorno al enfocar*/
+    color: white;
+    margin-left: 40%;
+    height: 30px;
+    border-radius: 5px;
+    margin-top: 10px;
+    box-shadow: 0px 5px 15px 0px rgba(16, 94, 31, 0.3); /*sombra al boton*/
+    cursor: pointer; /*cambia el cursor al pasar el raton*/
+}
+
+/*Estilos para los h3 del .contac-left*/
+
+.contact-left h3{
+    columns: #1c001c; /*Posible error ortografico*/
+    font-weight: 600; /*Grosor de fuenta seminegrita*/
+    margin-bottom: 30px; /*separacion inferior de 30px*/
+}
+
+tr td:first-child{
+    padding-right: 20px; /*Espacio a la derecha para separar columnas*/
+}
+
+tr td {
+    padding-top: 20px; /*Espacio arriba de 20px para seprar las filas*/
+}

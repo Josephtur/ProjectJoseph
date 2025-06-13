@@ -1,0 +1,382 @@
+/*Definicion de variables globales*/
+:root{
+    --lighting-color: #0089b7; /*Color principal claro ( azul turquesa)*/
+    --dark-color: #003d62; /*Color secundario oscuro*/
+    --darker-color: #003251; /*Variante aun mas oscura*/
+    --color: #fff700; /*color de acento*/
+    --color-amarillo-claro: #f2de2c39;
+    --color-favorito: #40E0D0; 
+    --color-favorito: #7a959e; 
+}
+
+/*Aplica a todos los elementos*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*Incluye borde y padding en el ancho y alto*/
+    font-family: 'Poppins' , sans-serif;
+}
+
+/*Ajuste base del tamaño fuente html*/
+
+html{
+    font-size: 62.5%; /*Hace que 1 rem = 10px (62.5% de 16px*/
+}
+
+/*Estilos comunes a body y html*/
+
+body, html {
+    font-weight: 300; /*Grosor de fuente ligero*/
+    line-height: 1.4; /*Interlineado para mejorar la lectura*/
+    scroll-behavior: smooth; /*Scroll suave para enlaces internos*/
+    color: white; /*Color mde texto por defecto blanco*/
+}
+
+body{
+    font-size: 1.4rem; /*tamaño de texto base: 14px*/
+}
+
+/*contenedor centralizado*/
+
+.container{
+    max-width: 1300px; /*ancho maximo del contenedor*/
+    margin: 0 auto; /*centra horizontalmente*/
+}
+
+/*esto es un estilo para enlaces*/
+a{
+    text-decoration: none; /*quita el subrayado*/
+    color: white; /*Color de enlace blanco*/
+}
+
+ul{
+    list-style: none; /*Quita viñeta*/
+}
+
+/*Encabezado stycky */
+header{
+    position: sticky; /*Se queda fijo al hacer el scroll /////// */
+    top: 0; /*se ancla por arriba la ventana*/
+    /*Nos asegura que header siempre estara por encima de cualquier elemento*/
+    z-index: 100; /*Por encima de otros elementos*/
+    background: var(--lighting-color);
+}
+
+/*Espaciado interno y distribucion*/
+nav{
+    display: flex; /*flexbox para alinear los elementos*/
+    justify-content: space-between; /*separa el logo y menu*/
+    align-content: center; /*centrado verticalmente*/
+    padding: 1rem; /*padding interior de 10px*/
+}
+
+/*lista horizontal den nav*/
+nav ul{
+    display: flex; /*flexbox en la lista*/
+    gap: 1rem; /*espacio entre item 10px*/
+}
+
+/*items del menu*/
+
+nav li {
+    font-size: 1.8rem;
+    border-bottom: 0.4rem transparent solid; /*Linea inferior transparente*/
+    transition: 0.3s ease-in-out; /*transicion suave en hover*/
+}
+
+/*hover en items del menu*/
+nav li:hover{
+    border-bottom: 0.4rem var(--color) solid; /*linea inferior amarilla*/
+}
+
+.logo{
+    font-size: 2rem; /*Tamaño de texto 20px*/
+    font-weight: 700; /*fuente negrita*/
+}
+
+/*Seccion hero*/
+
+#hero{
+    background: var(--dark-color); /*azul marino*/
+    padding: 4rem 0; /*padding vertical de 40px*/
+    border-bottom: 4px solid var(--lighting-color);
+    max-height: 100vh; /*altura maxima igual al viewpor*/
+}
+
+/*Contenedor interno de hero*/
+
+#hero .container {
+    display: flex; /*flexbox para la imagen y texto*/
+    justify-content: space-around; /*separacion uniforme*/
+    align-items: center; /*centrado verticalmente*/
+}
+
+/*bloque de contenido del hero*/
+
+.hero_content {
+    display: grid; /*grid para centrar facilmente*/
+    place-items: center; /*centra horizontal y verticalmente*/
+}
+
+/*bloque de imagen hero*/
+.hero_image {
+    max-width: 45%; /*ancho maximo de 45% del contenedor*/
+    overflow: hidden; /*oculta lo que sobresalga*/
+}
+/*Estilo de la imagen*/
+.hero_image img{
+    width: 100%;
+    height: auto;
+    display: block; /*Elimina el espacio inferior tipico de los imgs inline*/
+    border-radius: 0.5rem; /*border redondeado de 5px*/
+    object-fit: cover; /*recorta ajusta la imagen cubriendo al contenedor*/
+}
+
+/*titulo principal h1*/
+#hero h1 {
+    font-size: 3rem; /*tamaño del texto 30px*/
+    font-weight: bold; /*negrita*/
+}
+
+/*Texto "HI" grande */
+
+.hi_text{
+    font-size: 6rem; /*tamaño texto 50 px*/
+    font-weight: bold; /*negrita*/
+    color: var(--color);
+}
+
+/*Texto de nombre*/
+.name_text{
+    font-size: 5rem; 
+}
+
+/*Subtitulo animado*/
+#hero h2{
+    font-size: 4rem; /*tamaño a 40px*/
+    font-weight: bold;
+    overflow: hidden; /*oculta el texto no escrito*/
+    border-right: 0.1em solid orange; /*cursor de maquina de escribir*/
+    white-space: nowrap; /*evita el salto de linea*/
+    margin: 0 auto; /*centra horizontalmente*/
+    animation: bounce 5s steps(40,end), blink-caret 0.75s step-end infinite;
+} 
+
+/*Animacion typing*/
+@keyframes typing {
+    from { width: 0;} /*empieza con ancho 0*/
+    to {width: 100%;} /*termina mostrando texto*/
+}
+
+/*Animacion caret parpadeante*/
+@keyframes blink-caret{
+    from, to { border-color: transparent;}
+    50%      { border-color: orange;}
+}
+
+/*Seccion de proyectos*/
+#project{
+    background: var(--darker-color);
+    padding-bottom: 4rem; /*paddin inferior de 40px*/
+}
+
+/*tiulos de proyectos*/
+#project h2 {
+    font-size: 6rem;
+    text-align: center;
+    padding: 2rem 0; /*padding vertical de 20px*/
+}
+
+.project_container {
+    display: grid;
+    /*Columnas fluidas de minimo 320px*/
+    grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+    gap: 2rem; /*espacio de 20px entre cada items*/
+}
+
+/*Cada item del grid*/
+.grid_item{
+    display: grid; /*Grid para centrar*/
+    place-items: center; /*centro completo*/
+}
+/*Estilo base de cada card*/
+.card {
+    width: 100%; /*ancho completo dentro del grid_item*/
+    max-width: 320px; /*ancho maximo de 320 px*/
+    display: flex;
+    flex-direction: column; /*apilar verticalmente*/
+    border-radius: 0.5rem;
+    overflow: hidden; /*recorta lo que sobresalga*/
+    transition: 0.2s ease-in-out; /*transicion suave al hover*/
+}
+/*hover en card: aumenta de tamaño*/
+.card:hover{
+    transform: scale(1.05); /*escala a 105%*/
+}
+
+/*Hover en la imagen card*/
+.card:hover img{
+    transform: scale(1.05); /*escala de la imagen*/
+    opacity: 0.5; /*ligera transparencia*/
+    transition: 0.3s ease-in-out; /*transicion propia*/
+}
+
+/*contenido interior card ( de proyectos )*/
+.card_content{
+    padding:2rem; /*Padding interno de 20px*/
+    position: relative; /*Posicionamiento para top*/
+    top: -6.5rem; /*Situa el bloquee sobre la imagen*/
+    margin-bottom:-6.5rem; /*ajusta espacio inferior*/
+    transform: translateY(100px); /*Empieza desplazado hacia abajo*/
+}
+
+/*Hover en contenido : lo que muestra*/
+.card:hover .card_content {
+    background: white;
+    color: var(--dark-color);
+    transform: translateY(0); /*Vuelve a su posicion original*/
+}
+
+/*Titulo dentro de card ( titulo del projecto)*/
+.card_content h3{
+    text-align: center; /*centra el texto*/
+}
+
+/*regla base para las miniaturas*/
+
+.card img{
+    width: 100%; /*ancho completo*/
+    height: 360px; /*altura fija de 360px*/
+    object-fit: cover; /*Recorta para cubrir el contenedor*/
+    display: block; /*Elimina espacios extras*/
+    /*comparaciones relacion aspecto: 
+    1/1 cuadrado
+    16/9 pantalla HD (ancho)
+    4/3 pantallas antiguas
+    3/4 vertical (hoja A4)*/
+    aspect-ratio: 3/4; /*relacion de aspecto 3:4*/
+}
+
+/*Seccion contactos*/
+#contact{
+    background: var(--dark-color);
+}
+
+/*Titulo de contacnto*/
+
+#contact h2{
+    font-size: 6rem; /*tamaño de texto de 60px*/
+    text-align: center;
+    margin: 1rem 0; /*margen vertical de 10px*/
+}
+
+#contact .container {
+    height: 90vh; /*altura de 90% del viewport*/
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    justify-content: center; /*VER ESTO*/
+}
+
+/*Grid para contacto (iconos y text)*/
+
+.top_contact {
+    max-width: 800px;
+    display: grid;
+    margin: 0 auto;
+    /*Columnas fluidas de mini 80px*/
+    grid-template-columns: repeat(auto-fit, minmax(80px,1fr));
+    gap: 1rem;
+}
+/*cada forma de contacto*/
+.contact_way {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+/*Iconos de contactos*/
+
+.contact_way i{
+    font-size: 3rem;
+}
+
+/*texto dentro de cada forma de contacto*/
+.contact_way h3 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+/*Grid para enlaces o elementos al pie del formulario*/
+.bottom_contact {
+    max-width: 400px;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    gap: 1rem;
+}
+
+/*Pie de pagina*/
+footer {
+    background: var(--dark-color);
+    padding: 2rem;
+    color: white;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+/*Ajustes para pantallas <=500px*/
+@media (max-width: 501px){
+    html{
+        font-size: 25%; /*reduce base rem a 40%*/
+    }
+    #hero .container{
+        flex-direction: column;
+    }
+    .hero_image{
+        display: grid;
+        place-items: center;
+    }
+    #contact .container{
+        height: 50vh; /*Ajusta altura a 50% del viewport ( viewport=dispositivos)*/
+    }
+    .card img {
+        height: 220px; /*altura mas razonable al movil*/
+    }
+}
+
+/*Ajustes para pantallas <= 900*/
+
+@media (max-width:901px){
+    html {
+        font-size: 40;
+    }
+
+    #hero .container{
+        flex-direction: column;
+    }
+    .hero_image{
+        display: grid;
+        place-items: center;
+    }
+    #contact .container{
+        height: 70vh;
+    }
+    .card image {
+        height: 300px;
+    }
+}
+
+/*Ajustes para pantallas >1000px*/
+
+@media (min-widht: 1000px){
+    .top_contact{
+        grid-template-columns: repeat(auto-fit, minmax(150px,1fr)); 
+        gap: 2rem;
+    } 
+        .bottom_contact{
+        grid-template-columns: repeat(auto-fit, minmax(150px,1fr)); 
+        gap: 1rem;
+    }
+
+}

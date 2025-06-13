@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-image: url('https://th.bing.com/th/id/R.b8f83038e792572e6f5c05bcf37c900a?rik=zULjw%2fIj4%2f%2bIpg&pid=ImgRaw&r=0'); /* Imagen temática de programación */
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  color: #fff;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Contenedor principal */
+header, main, section, footer {
+  background-color: rgba(0, 0, 0, 0.75); /* Fondo semitransparente */
+  margin: 20px auto;
+  padding: 25px;
+  border-radius: 12px;
+  max-width: 900px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Titulos */
+h1, h2, h3 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #ffddaa;
+}
+
+.descripcion {
+  text-align: center;
+  font-size: 1.2em;
+  color: #eee;
+}
+
+/* Tabla */
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 10px;
+  border-bottom: 1px solid #999;
+}
+
+td:first-child {
+  font-weight: bold;
+  color: #ffd39f;
+}
+
+/* Enlaces */
+.enlaces {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.enlaces a {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #ffb366;
+  color: #000;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.enlaces a:hover {
+  background-color: #ffa347;
+}
+
+/* Formulario */
+form label {
+  display: block;
+  margin: 12px 0 6px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 4px;
+  border: none;
+  border-radius: 6px;
+  background-color: #eee;
+  color: #000;
+}
+
+input[type="submit"] {
+  background-color: #ff8c42;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  margin-top: 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #e07a35;
+}
+
+/* Checkbox */
+.inline {
+  margin-right: 10px;
+}
+
+fieldset {
+  margin-top: 20px;
+  border: 1px solid #aaa;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 0.9em;
+  color: #ccc;
+  margin-bottom: 30px;
+}

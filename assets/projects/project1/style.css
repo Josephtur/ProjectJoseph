@@ -1,0 +1,106 @@
+body{
+    /*Fondo con imagen*/
+    background-image: url(https://i.pinimg.com/originals/57/d9/1a/57d91a6a1afe16a653277f2f9cfcb7f7.jpg);
+    /*CON EL BACKGROUND-SIZE: COVER; SE UNIFICA LA IMAGEN*/
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 20px; /*Espaciado interior del body*/
+}
+
+h1, h2, p{
+    text-align: center; /*Centra todos los titulos y parrafos*/
+}
+
+/*Estilo del contenedor principal*/
+.menu{
+    width: 80%; /*ocupa el 80% del ancho del viewport*/
+    background-color: burlywood; /*Color de fondo similar al papel*/
+    margin-left: auto; /*Centrado horizontalmente*/
+    margin-right: auto;
+    padding: 20px; /*Espacio interior*/
+    max-width: 500px; /* ancho maximo */
+}
+
+.flavor, .dessert{
+    text-align: left; /*Alineacion a la derecha*/
+    width: 75px; /*75% del espaciado horizontal */
+}
+/*Estilos para los precios*/
+.price{
+    text-align: right; /*alineacion a la derecha*/
+    width: 25%;
+}
+.item{
+    display: flex;
+}
+
+/*Estilos de los parrafos dentro de cada articulo*/
+.item p {
+    display: inline-block; /*elementos en linea */
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+h1,h2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+}
+
+/*Estilo de texto "est 2020*/
+
+.established{
+    font-style: italic; /*Cursiva*/
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+/*Estilo especifico del titulo principal*/
+h1{
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+h2{
+    font-size: 30px;    
+}
+
+/*Linea horizontal de separacion*/
+hr{
+    height: 2px;
+    background-color: brown;
+    border-color: brown;
+}
+/*Linea final con espacios adicional arriba*/
+.bottom-line{
+    margin-top: 25px;
+}
+/*estilo del pie de pagina*/
+footer{
+    font-size: 14px;
+}
+/*enlaces en estado normal*/
+a{
+    color: black;
+}
+
+/*enlaces visitados */
+a:visited{
+    color: black;
+}
+/*Enlace al pasar el cursor*/
+a:hover{
+    color: brown;
+}
+/*Enlace activos (clic)*/
+a:active{
+    color: brown;
+}
+.address{
+    margin-bottom: 25px;
+}
+img{
+    display: block; /*quita el espacio extra debajo*/
+    margin-right: auto; /*centrado horizontal*/
+    margin-left: auto;
+    margin-top: -25px; /*Sube la imagen un poco*/
+}

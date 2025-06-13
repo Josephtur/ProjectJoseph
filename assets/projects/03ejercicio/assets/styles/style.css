@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*Incluye padding y borde en ancho alto total*/
+    font-family: 'Poppins', sans-serif; /*Define fuente base para toda la pagina*/
+}
+
+/*Seccion principal [hero]*/
+.hero{
+width: 100%;
+min-height: 100vh; /*Altura minima igual a la altura de la ventana*/
+background-image: url(https://www.elegantthemes.com/blog/wp-content/uploads/2013/09/bg-10-full.jpg); /*Imagen de fondo*/
+background-position: center; /*centrar la imagen de fondo*/
+background-size: cover; /*Cubre todo el contenedor, recortando si es necesario*/
+padding: 10px 10%; /*espacio interno de 10px arriba y abajo y  10% de izquierda a derecha*/
+overflow: hidden; /*oculta cualquier contenido que sobresalga*/
+position: relative; /*Sirve como referencia para elementos posicionados dentro*/
+}
+
+/*Barra de navegacion*/
+nav{
+    padding: 10px 0; /*Espacio arriba y abajo de 10px*/
+    display: flex; /*activa modelo flex para alinear elementos*/
+    align-items: center; /*centra verticalmente a los hijos*/
+    justify-content: space-between; /*separa a los hijos al maximo a ambos extremos*/
+}
+
+/*Logo dentro de nav*/
+.logo{
+    width: 140px; /*ancho fijo de 140px*/
+}
+ /*items de la lista de la navegacion*/
+ nav ul li {
+    display: inline-block; /*muestra los <li> en linea, como en bloques*/
+    list-style: none; /*Elimina las viñetas*/
+    margin: 10px 15px; /*Margenes alrededor de cada item*/
+ }
+
+ /*Enlaces dentro de los items de navegacion*/
+
+ nav ul li a {
+    text-decoration: none; /*Elimina el subrayado*/
+    color: #333;
+    font-weight: 400; /*Grosor de la letra descargada del googlefonts*/
+ }
+
+ /*Boton de login*/
+
+ .logn-btn{
+    text-decoration: none;/*sin subrayado*/
+    color: #333;
+    margin-right: 15px; /*Separacion a la derecha*/
+    font-weight: 400;
+ }
+
+
+ /*Botones principales [.btn]*/
+
+ .btn{
+    display: inline-block; /*bloque en linea*/
+    text-decoration: none; /*sin subrayado*/
+    padding: 14px 40px; /*Relleno interno vertical de 14px y horizontal de 40px*/
+    color: #fff;
+    background-image: linear-gradient(45deg, #009FFF, #ec2F4B); /*Degradado diagola*/
+    font-size: 14px;
+    border-radius: 30px;
+    border-top-right-radius: 0; /*Esquina superior derecha sin redondeno*/
+    transition: 0.5s;
+ }
+
+ /*Contenedor de contenido dentro de .hero*/
+ .content{
+    margin-top: 10%; /*separacion superior relativa al contenedor padre*/
+    max-width: 600px; /*ancho maximo de 600px*/
+ }
+
+ /*Titulo principal dentro de .content*/
+
+ .content h1 {
+    font-size: 70px;
+    color: #222;
+ }
+ /* parrafo descriptivo dentro de .content*/
+
+ .content p {
+    margin: 10px 0 30px; /*margenes 10 px arriba 0 px lados 30 px abajo*/
+    color: #333;
+    animation-delay: 0.5s; /*retraso 0.5s antes de iniciar la animacion*/
+ }
+
+ .content .btn{
+    padding: 15px 80px; /*Relleno para destacar*/
+    font-size: 16px;
+    animation-delay: 1s; /*retraso de 1s antes de iniciar animacion*/
+ }
+
+ /*efecto hover - cambiar redondeo de la esquina al pasar*/
+
+ .btn:hover{
+    border-top-right-radius: 35px;
+    background-image: linear-gradient(#30E8BF, #FF8235);
+ }
+
+ /*imagen destacada dentro de .hero*/
+
+ .features-img{
+    width: 1200px;
+    position: absolute; /*posicionamiento absoluto respeto a .hero*/
+    bottom: 0%; /*separada un 10% del borde derecho*/
+    right: 10%; /*Separada un 10% del borde derecho*/
+ }
+
+ /*Variante animada de .feature-img*/
+ .features-img.anim{
+    animation-delay: 1.5s;
+ }
+
+ .anim{
+    opacity: 0; /*Empieza invisible*/
+    transform: translateY(30px); /*desplazo 30px hacia abajo*/
+    animation: moveup 0.5s linear forwards; /*ejecuta la animacion moveup*/
+ }
+
+ /*definicion de la animacion moveup*/
+
+ @keyframes moveup {
+    100%{
+        opacity: 1; /*termina completamente visible*/
+        transform: translateY(0px); /*termina en su posicion original*/
+    }
+ }
+
+ 
+
+ 
+  .footer {
+    background-color: #1d1d1d;
+    padding: 20px 0;
+    text-align: center;
+    color: #ccc;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .footer .brand {
+    color: #ff4b5c;
+    font-weight: bold;
+  }
+
+  .footer p {
+    margin: 0;
+    font-size: 14px;
+  }
+
+  @media (max-width: 600px) {
+    .footer {
+      font-size: 12px;
+    }
+  }

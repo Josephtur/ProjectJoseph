@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Perfil de Luis David como freelance" />
+    <title>Presentacion L.David</title>
+  </head>
+  <style>
+    body {
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+
+    header {
+      background-color: black;
+      color: white;
+    }
+
+    main {
+      background-color: rgb(72, 49, 49);
+      color: white;
+    }
+
+    #boton:hover {
+      background-color: black;
+      color: white;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      cursor: pointer;
+    }
+
+    #fondoformulario {
+      background: url("https://i.pinimg.com/736x/06/e8/a1/06e8a182a0b167deda047920f2165085.jpg");
+      backdrop-filter: blur(10px); /* Efecto borroso detrás */
+      -webkit-backdrop-filter: blur(10px); /* Soporte para Safari */
+      border-radius: 16px;
+      padding: 30px;
+      max-width: 90%; /* Ajusta el tamaño según tu diseño */
+      margin: 50px auto; /* Centra el formulario en la página */
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      color: #000; /* Asegura buena legibilidad del texto */
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      gap: 20px;
+    }
+
+    fieldset {
+      border: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    label {
+      display: flex;
+      flex-direction: column;
+      font-weight: 500;
+      color: white;
+    }
+
+    input,
+    select,
+    textarea,
+    #borroso {
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+      background: rgba(255, 255, 255, 0.5);
+      backdrop-filter: blur(5px);
+      color: #000;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      color: #555;
+    }
+
+    #nombre {
+      font-family: "Segoe Print", "Bradley Hand", Chilanka, TSCu_Comic, casual,
+        cursive;
+      font-weight: 600;
+      margin-top: 1em;
+    }
+
+    #nombre img {
+      padding: 10px;
+      width: 300px;
+      border-radius: 50%;
+    }
+
+    #textonombre {
+      display: block;
+      margin: auto;
+      text-align: center;
+    }
+
+    #logos {
+      padding: 10px;
+      height: 80px;
+      padding: 10px;
+      margin: 10px 10px;
+    }
+
+    .link {
+      display: inline-flex;
+      align-items: center;
+      font-size: 24px;
+      text-decoration: none;
+    }
+
+    .link .texto {
+      display: none;
+      color: white;
+      padding-right: 20px;
+      margin-left: 0px;
+    }
+
+    .link:hover {
+      border: 1px solid #f0f0f0;
+      border-radius: 300px;
+    }
+
+    .link:hover .texto {
+      display: inline;
+    }
+
+    .st1 {
+      fill: #fff;
+    }
+  </style>
+  <body>
+    <header
+      id="nombre"
+      style="
+        box-shadow: gray;
+        border: 10px solid gray;
+        border-radius: 150px;
+        display: flex;
+      "
+    >
+      <img src="./ldavid.png" alt="Luis David Jimenez Iglesias" />
+      <div id="textonombre">
+        <h1 style="margin: 5px; font-size: 4em">Luis David Jimenez Iglesias</h1>
+        <p style="margin: 5px; font-size: 1.5em;">
+          <i
+            >Programador Web Full Stack y Administrador/Desarrollador de BBDD</i
+          >
+        </p>
+        <div
+          style="
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 5px;
+          "
+        >
+          <a
+            href="https://www.linkedin.com/in/luis-david-jimenez-iglesias-02aba029a/"
+            target="_blank"
+            class="link"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              id="logos"
+              preserveAspectRatio="xMidYMid"
+              viewBox="0 0 256 256"
+            >
+              <path
+                d="M218.123 218.127h-37.931v-59.403c0-14.165-.253-32.4-19.728-32.4-19.756 0-22.779 15.434-22.779 31.369v60.43h-37.93V95.967h36.413v16.694h.51a39.907 39.907 0 0 1 35.928-19.733c38.445 0 45.533 25.288 45.533 58.186l-.016 67.013ZM56.955 79.27c-12.157.002-22.014-9.852-22.016-22.009-.002-12.157 9.851-22.014 22.008-22.016 12.157-.003 22.014 9.851 22.016 22.008A22.013 22.013 0 0 1 56.955 79.27m18.966 138.858H37.95V95.967h37.97v122.16ZM237.033.018H18.89C8.58-.098.125 8.161-.001 18.471v219.053c.122 10.315 8.576 18.582 18.89 18.474h218.144c10.336.128 18.823-8.139 18.966-18.474V18.454c-.147-10.33-8.635-18.588-18.966-18.453"
+                fill="#0A66C2"
+              />
+              <span class="texto">LinkedIn</span>
+            </svg>
+          </a>
+
+          <a
+            href="https://www.infojobs.net/candidate/cv/view/index.xhtml"
+            target="_blank"
+            class="link"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xml:space="preserve"
+              id="logos"
+              version="1.1"
+              viewBox="0 0 138 136.1"
+            >
+              <path
+                id="BG"
+                d="M138 113c0 12.8-10.3 23.1-23.1 23.1H23.1C10.3 136.1 0 125.7 0 113V23.1C0 10.3 10.3 0 23.1 0h91.8C127.7 0 138 10.3 138 23.1V113z"
+                style="fill: #167db7"
+              />
+              <g id="IJ">
+                <path
+                  d="M57.9 89.3c-.1.7-.7 1.2-1.5 1.2H45.3c-.7 0-1.3-.4-1.3-1.1l.1-.2 7.1-59.3c.1-.7.2-1 1-1.1h12c.6 0 .9.4.9 1v.2l-7.2 59.3zM86.2 91.3c-1.6 12.9-9.7 15.9-19.4 15.9-5.7 0-6.5-.2-8-.4-.7-.1-1.5-.2-1.5-1.3v-.5l.6-4.8c.2-1.4.7-1.7 2-1.7 1.2-.1 2.7-.1 4.5-.2 4.3-.2 7.3-.6 8.1-6.7L80 30c.1-.7.7-1.1 1.4-1.2l11.3.2h.2c.7 0 1 .4 1 1l-7.7 61.3z"
+                  class="st1"
+                />
+              </g>
+              <span class="texto">InfoJobs</span>
+            </svg>
+          </a>
+
+          <a
+            href="https://github.com/LuisDavidJimenez"
+            target="_blank"
+            class="link"
+            ><svg
+              id="logos"
+              viewBox="0 0 1024 1024"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M8 0C3.58 0 0 3.58 0 8C0 11.54 2.29 14.53 5.47 15.59C5.87 15.66 6.02 15.42 6.02 15.21C6.02 15.02 6.01 14.39 6.01 13.72C4 14.09 3.48 13.23 3.32 12.78C3.23 12.55 2.84 11.84 2.5 11.65C2.22 11.5 1.82 11.13 2.49 11.12C3.12 11.11 3.57 11.7 3.72 11.94C4.44 13.15 5.59 12.81 6.05 12.6C6.12 12.08 6.33 11.73 6.56 11.53C4.78 11.33 2.92 10.64 2.92 7.58C2.92 6.71 3.23 5.99 3.74 5.43C3.66 5.23 3.38 4.41 3.82 3.31C3.82 3.31 4.49 3.1 6.02 4.13C6.66 3.95 7.34 3.86 8.02 3.86C8.7 3.86 9.38 3.95 10.02 4.13C11.55 3.09 12.22 3.31 12.22 3.31C12.66 4.41 12.38 5.23 12.3 5.43C12.81 5.99 13.12 6.7 13.12 7.58C13.12 10.65 11.25 11.33 9.47 11.53C9.76 11.78 10.01 12.26 10.01 13.01C10.01 14.08 10 14.94 10 15.21C10 15.42 10.15 15.67 10.55 15.59C13.71 14.53 16 11.53 16 8C16 3.58 12.42 0 8 0Z"
+                transform="scale(64)"
+                fill="#ffff"
+              />
+              <span class="texto">GitHub</span>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main
+      style="
+        border: 10px solid gray;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        margin: 0 10%;
+      "
+    >
+      <div style="justify-content: center; display: flex; margin: 20px 10px">
+        <svg
+          id="logos"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1052 1052"
+        >
+          <path fill="#f0db4f" d="M0 0h1052v1052H0z" />
+          <path
+            d="M965.9 801.1c-7.7-48-39-88.3-131.7-125.9-32.2-14.8-68.1-25.399-78.8-49.8-3.8-14.2-4.3-22.2-1.9-30.8 6.9-27.9 40.2-36.6 66.6-28.6 17 5.7 33.1 18.801 42.8 39.7 45.4-29.399 45.3-29.2 77-49.399-11.6-18-17.8-26.301-25.4-34-27.3-30.5-64.5-46.2-124-45-10.3 1.3-20.699 2.699-31 4-29.699 7.5-58 23.1-74.6 44-49.8 56.5-35.6 155.399 25 196.1 59.7 44.8 147.4 55 158.6 96.9 10.9 51.3-37.699 67.899-86 62-35.6-7.4-55.399-25.5-76.8-58.4-39.399 22.8-39.399 22.8-79.899 46.1 9.6 21 19.699 30.5 35.8 48.7 76.2 77.3 266.899 73.5 301.1-43.5 1.399-4.001 10.6-30.801 3.199-72.101zm-394-317.6h-98.4c0 85-.399 169.4-.399 254.4 0 54.1 2.8 103.7-6 118.9-14.4 29.899-51.7 26.2-68.7 20.399-17.3-8.5-26.1-20.6-36.3-37.699-2.8-4.9-4.9-8.7-5.601-9-26.699 16.3-53.3 32.699-80 49 13.301 27.3 32.9 51 58 66.399 37.5 22.5 87.9 29.4 140.601 17.3 34.3-10 63.899-30.699 79.399-62.199 22.4-41.3 17.6-91.3 17.4-146.6.5-90.2 0-180.4 0-270.9z"
+            fill="#323330"
+          />
+        </svg>
+        <svg
+          id="logos"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="xMidYMid"
+          viewBox="0 0 256 346"
+        >
+          <path
+            d="M83 267s-14 8 9 11c27 3 41 2 71-3 0 0 8 5 19 9-67 29-153-2-99-17M74 230s-15 11 8 13c29 3 52 3 92-4 0 0 6 5 15 8-82 24-173 2-115-17"
+            fill="#5382A1"
+          />
+          <path
+            d="M144 166c17 19-4 36-4 36s42-22 22-49c-18-26-32-38 44-82 0 0-119 29-62 95"
+            fill="#E76F00"
+          />
+          <path
+            d="M233 295s10 8-10 15c-39 12-163 15-197 0-12-5 11-13 18-14l12-2c-14-9-89 19-38 28 138 22 251-10 215-27M89 190s-63 15-22 21c17 2 51 2 83-1 26-2 52-7 52-7l-16 9c-64 16-187 8-151-9 30-14 54-13 54-13M202 253c64-33 34-66 13-61l-7 2s2-3 6-5c41-14 73 43-14 66l2-2"
+            fill="#5382A1"
+          />
+          <path
+            d="M162 0s36 36-34 91c-56 45-12 70 0 99-32-30-56-56-40-80 23-35 89-53 74-110"
+            fill="#E76F00"
+          />
+          <path
+            d="M95 345c62 4 158-3 160-32 0 0-4 11-51 20-53 10-119 9-158 2 0 0 8 7 49 10"
+            fill="#5382A1"
+          />
+        </svg>
+        <svg
+          id="logos"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 452 520"
+        >
+          <path fill="#e34f26" d="M41 460L0 0h451l-41 460-185 52" />
+          <path fill="#ef652a" d="M226 472l149-41 35-394H226" />
+          <path
+            fill="#ecedee"
+            d="M226 208h-75l-5-58h80V94H84l15 171h127zm0 147l-64-17-4-45h-56l7 89 117 32z"
+          />
+          <path
+            fill="#fff"
+            d="M226 265h69l-7 73-62 17v59l115-32 16-174H226zm0-171v56h136l5-56z"
+          />
+        </svg>
+        <svg
+          id="logos"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 54 33"
+        >
+          <g clip-path="url(#a)">
+            <path
+              fill="#38bdf8"
+              fill-rule="evenodd"
+              d="M27 0c-7.2 0-11.7 3.6-13.5 10.8 2.7-3.6 5.85-4.95 9.45-4.05 2.054.513 3.522 2.004 5.147 3.653C30.744 13.09 33.808 16.2 40.5 16.2c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C36.756 3.11 33.692 0 27 0zM13.5 16.2C6.3 16.2 1.8 19.8 0 27c2.7-3.6 5.85-4.95 9.45-4.05 2.054.514 3.522 2.004 5.147 3.653C17.244 29.29 20.308 32.4 27 32.4c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C23.256 19.31 20.192 16.2 13.5 16.2z"
+              clip-rule="evenodd"
+            />
+          </g>
+        </svg>
+        <svg
+          id="logos"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 -1 100 50"
+        >
+          <path
+            fill="#fff"
+            d="M7.579 10.123h14.204c4.169.035 7.19 1.237 9.063 3.604 1.873 2.367 2.491 5.6 1.855 9.699-.247 1.873-.795 3.71-1.643 5.512a16.385 16.385 0 01-3.392 4.876c-1.767 1.837-3.657 3.003-5.671 3.498a26.11 26.11 0 01-6.254.742h-6.36l-2.014 10.07H0l7.579-38.001m6.201 6.042l-3.18 15.9c.212.035.424.053.636.053h.742c3.392.035 6.219-.3 8.48-1.007 2.261-.742 3.781-3.321 4.558-7.738.636-3.71 0-5.848-1.908-6.413-1.873-.565-4.222-.83-7.049-.795-.424.035-.83.053-1.219.053h-1.113l.053-.053M41.093 0h7.314L46.34 10.123h6.572c3.604.071 6.289.813 8.056 2.226 1.802 1.413 2.332 4.099 1.59 8.056l-3.551 17.649h-7.42L54.979 21.2c.353-1.767.247-3.021-.318-3.763s-1.784-1.113-3.657-1.113l-5.883-.053-4.346 21.783h-7.314L41.093 0M70.412 10.123h14.204c4.169.035 7.19 1.237 9.063 3.604 1.873 2.367 2.491 5.6 1.855 9.699-.247 1.873-.795 3.71-1.643 5.512a16.385 16.385 0 01-3.392 4.876c-1.767 1.837-3.657 3.003-5.671 3.498a26.11 26.11 0 01-6.254.742h-6.36L70.2 48.124h-7.367l7.579-38.001m6.201 6.042l-3.18 15.9c.212.035.424.053.636.053h.742c3.392.035 6.219-.3 8.48-1.007 2.261-.742 3.781-3.321 4.558-7.738.636-3.71 0-5.848-1.908-6.413-1.873-.565-4.222-.83-7.049-.795-.424.035-.83.053-1.219.053H76.56l.053-.053"
+          />
+        </svg>
+        <svg
+          id="logos"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="xMidYMid"
+          viewBox="0 0 256 252"
+        >
+          <path
+            d="M236 194c-14 0-25 1-34 5-3 1-7 1-7 4l3 6c2 3 5 8 9 11l11 8 21 10 11 9 6 4-3-6-5-5c-5-7-11-13-18-18-6-3-18-9-20-15h-1l12-3 18-3 8-2v-2l-9-10c-8-8-18-15-28-22l-18-8c-2-1-6-2-7-4l-7-13-15-30-8-20c-18-30-38-48-68-65-6-4-14-5-22-7l-13-1-8-6C34 5 8-9 1 9c-5 11 7 22 11 28l9 13 3 9c3 8 5 17 9 24l6 10c2 2 4 3 5 6-3 4-3 9-4 13-7 20-4 44 5 59 2 4 9 14 18 10 8-3 6-13 8-22l1-4 8 14c5 9 14 18 22 24 4 3 8 8 13 10l-4-4-9-10c-8-10-14-21-20-32l-7-17-3-6c-3 4-7 7-9 12-3 7-3 17-4 26h-1c-6-1-8-7-10-12-5-12-6-32-1-46 1-4 6-15 4-19-1-3-4-5-6-7l-7-12-10-30-9-13c-3-5-7-8-10-14-1-2-2-5 0-7l2-2c2-2 9 0 11 1 6 3 12 5 17 9l8 6h4c6 1 12 0 17 2 9 3 18 7 25 12 23 14 42 35 54 59 3 4 3 8 5 12l12 26c4 8 7 16 12 23 3 4 14 6 18 8l12 4 18 12c2 2 11 7 12 10Z"
+            fill="#00546B"
+          />
+          <path
+            d="m58 43-7 1 6 7 4 9v-1c3-1 4-4 4-8l-2-4-5-4Z"
+            fill="#00546B"
+          />
+        </svg>
+        <svg
+          id="logos"
+          viewBox="0 0 240 366"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="xMidYMid"
+        >
+          <path
+            fill="#fff"
+            d="M182.022 9.147c2.982 3.702 4.502 8.697 7.543 18.687L256 246.074a276.467 276.467 0 0 0-79.426-26.891L133.318 73.008a5.63 5.63 0 0 0-10.802.017L79.784 219.11A276.453 276.453 0 0 0 0 246.04L66.76 27.783c3.051-9.972 4.577-14.959 7.559-18.654a24.541 24.541 0 0 1 9.946-7.358C88.67 0 93.885 0 104.314 0h47.683c10.443 0 15.664 0 20.074 1.774a24.545 24.545 0 0 1 9.95 7.373Z"
+          />
+          <path
+            fill="#FF5D01"
+            d="M189.972 256.46c-10.952 9.364-32.812 15.751-57.992 15.751-30.904 0-56.807-9.621-63.68-22.56-2.458 7.415-3.009 15.903-3.009 21.324 0 0-1.619 26.623 16.898 45.14 0-9.615 7.795-17.41 17.41-17.41 16.48 0 16.46 14.378 16.446 26.043l-.001 1.041c0 17.705 10.82 32.883 26.21 39.28a35.685 35.685 0 0 1-3.588-15.647c0-16.886 9.913-23.173 21.435-30.48 9.167-5.814 19.353-12.274 26.372-25.232a47.588 47.588 0 0 0 5.742-22.735c0-5.06-.786-9.938-2.243-14.516Z"
+          />
+        </svg>
+      </div>
+
+      <section>
+        <p
+          style="
+            text-align: justify;
+            font-size: 1.8em;
+            margin: 5%;
+            margin-top: 20px;
+          "
+        >
+          Bienvenido a mi perfil como freelance. Aquí encontrarás información
+          sobre mi experiencia, habilidades y proyectos en los que he trabajado.
+          <br /><br />
+          Soy un apasionado de la programación y el desarrollo web, con un
+          enfoque en crear soluciones innovadoras y eficientes. He trabajado en
+          la creacion de varias aplicaciones web utilizando tecnologías modernas
+          como HTML, CSS, JavaScript y frameworks como Astro o Laravel.
+          <br /><br />
+          Junto a mi nombre encontraras enlaces a mis perfiles profesionales en
+          LinkedIn, InfoJobs y GitHub, donde podrás ver más detalles sobre mi y
+          mi forma de trabajar.
+        </p>
+      </section>
+
+      <section id="fondoformulario" style="border-radius: 5%;">
+        <h2 style="color: white; font-size: 3em; margin-top: 0px;">Contactame para saber mas sobre Mi!</h2>
+        <p style="color: white; font-size: 2em">
+          Si quieres saber más sobre mi, puedes rellenar el siguiente
+          formulario y te contactaré con la mayor brevedad posible.
+        </p>
+        <form action="#enlace" method="post">
+          <fieldset>
+            <label for="nombre" style="font-size: 2em;">
+              Escribe tu Nombre:
+              <input style="margin: 0;" type="text" name="nombre" id="nombre" required />
+            </label>
+            <label for="correo" style="font-size: 2em;">
+              Escribe tu Correo:
+              <input style="margin: 0;" type="email" id="correo" pattern="@" required />
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <label for="infoad">
+              <textarea
+                id="borroso"
+                placeholder="Información Adicional Sobre ti..."
+                name="infoad"
+                id="infoad"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </label>
+            <label for="termino">
+              <div id="borroso">
+                <input type="checkbox" name="termino" id="termino" />
+                <span style="color: white;">
+                  Acepta que conectemos contigo a través de tu correo electrónico
+                  para enviarte información adicional.
+                </span>
+              </div>
+            </label>
+            <input id="boton" type="button" value="Enviar" />
+          </fieldset>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

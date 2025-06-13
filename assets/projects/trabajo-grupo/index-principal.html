@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Páginas webs accesibles, económicas y todos los estilos, encuentra al desarrollador web que necesitas.">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Tu página web | Desarrollamos la web que necesitas</title>
+</head>
+
+<!-- NAVEGADOR SUPERIOR // PRESENTACION INICIAL -->
+    <header style="background-color: rgb(177, 216, 206);color:#1c0303; padding: 1em; "> 
+        <div id="main_title">
+        <img src="logo_web.jpg" alt="logo-web" id="logo-web" />
+         <h1>Páginas Webs a medida económicas </h1>
+        </div>
+            <nav>
+                <a href="#servicios" style="color: rgb(9, 69, 69); margin-right: 1em;">Nuestros servicios</a>
+                <a href="#desarrolladores" style="color: rgb(9, 69, 69); margin-right: 1em;">Desarrolladores</a>
+                <a href="#presupuesto" style="color: rgb(9, 69, 69); margin-right: 1em;">Presupuesto</a>
+                <a href="#contacto" style="color: rgb(9, 69, 69); margin-right: 1em;">Contacto</a>
+            </nav>
+    </header> 
+
+ <!--Inicio cuerpo principal -->  
+<body>
+    <!-- Sección nuestros servicios-->
+     <div class="contenedor">
+    <h1>Nuestros servicios</h1>
+         <p>Probablemente quieras una página <b>web atractiva y elegante</b>. <br>Que defina bien la identidad de tu negocio y de los servicios o productos que ofreces.
+            Pero que sea sencilla, intuitiva y se diferencie bien de la competencia. <br>Que sea <b>rápida, segura y te enseñen a manejarla para que no dependas de nadie.</b>
+            <br>Lo que seguro no quieres es tener que pagar cuotas mensuales que no sirven para nada.<br>
+            Ni equivocarte de proveedor, ni tener que hablar con alguien que nunca esté disponible o que no te informe sobre el desarrollo de tu página y no cumpla las fechas de entrega que te prometió.
+            Y es normal. <b>Quieres una web bien hecha.</b></p>
+
+    <h2>Te proponemos</h2>
+        <p><em>*Oferta válida hasta final de mes para nuevos clientes</em></p>
+            <ul>
+                <li>Una página web con un diseño personalizado 
+                    a partir de tu identidad corporativa o de referencias de otras páginas web que te gusten. Será un diseño fino, moderno y elegante a un precio justo.</li>
+                <li>Entrega en 15 días.</li>
+                <li>Estará optimizada para que cargue muy rápido y se indexe bien en Google.</li>
+                <li>Se verá perfectamente en cualquier móvil, tablet y ordenador.</li>
+                <li>Será muy fácil de gestionar para cualquier persona sin experiencia. Te enseñaremos a manejarla para que puedas hacer cualquier cambio.</li>
+                <li>NINGUNA cuota mensual.</li>
+                <li>Hosting, Dominio, Asistencia técnica y Cuentas de email corporativas GRATIS. Y si ya tienes Hosting la migramos a tu cuenta.</li>
+            </ul>
+
+    <!-- Sección desarrolladores-->
+        <h1>Estás a punto de ver la mayoría de trabajos que hacemos para otras empresas o emprendedores.</h1>
+  
+        <section id="desarrolladores">
+        <h2>Nuestros desarrolladores</h2>
+            <div class="desarrolladores-lista">
+                <div class="desarrollador-card"><a href="presentacion-ldavid.html">Luis David</a></div>
+                <div class="desarrollador-card"><a href="#">Joseph</a></div>
+                <div class="desarrollador-card"><a href="#">Rubén</a></div>
+            </div>
+        </section>
+        
+    <!-- CREAMOS FORMULARIO PRESUPUESTO/CONTACTO -->
+
+    
+    <section id="presupuesto">
+         <form onsubmit="return mostrarMensaje()"> <!-- Inicio form de contacto -->
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" placeholder="Escribe tu nombre" required>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" placeholder="ejemplo@correo.com" required>
+
+                <label for="asunto">¿Conoces a tu desarrollador?</label>
+                <select name="refferer" >
+                    <!-- Opciones del desplegable-->
+                        <option value="">(Seleciona uno)</option>
+                        <option value="1">Aún no, me dejo asesorar</option>
+                        <option value="2">Luis David</option>
+                        <option value="3">Joseph</option>
+                        <option value="4">Rubén</option>
+                </select>
+                <label for="mensaje">Cuentanos tus necesidades:</label>
+                <textarea id="mensaje" rows="5" placeholder="¿A que te dedicas??de que será tu nueva web?" required></textarea>
+
+                <button type="submit">Contactar conmigo</button>
+            </form>
+                <div id="mensaje-exito" class="mensaje-enviado">
+                ¡Gracias por tu mensaje! Te responderemos lo antes posible. </div>
+                </div>
+    </section>
+         </div>
+        <!--Sección contacto/ubicación-->
+        <!--Creamos parte inferior de contacto y ubicación-->
+    <footer>
+        <div id="ubicacion">
+            <h1>Ubicación de nuestras oficinas</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.148935060481!2d-3.692178723309036!3d40.44984047143426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422931c8969f65%3A0x75d2a090890a4be2!2sUtopicus%20Paseo%20de%20la%20Habana%20-%20Oficinas%20%26%20Salas%20de%20Eventos!5e0!3m2!1ses!2ses!4v1749411573351!5m2!1ses!2ses" 
+        width="100" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+
+        <h1>Contacta con nosotros</h1>
+         <div id="contacto-info">
+            <p><strong>Teléfono:</strong> +34 911 222 333</p>
+            <p><strong>Instagram: </strong> <a href="#enlaceRedes" target="_blank">@WEB_RESPONSI </a></p>
+            <p><strong>Trabaja con nosotros:</strong> <a href="https://linkedin.com/in/tuusuario" target="_blank">linkedin.com/in/web_responsi</a></p>
+        </div>
+        <p> © Todos los derechos reservados 2025</p>
+    </footer>
+</body>
+</html>

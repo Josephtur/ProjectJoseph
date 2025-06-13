@@ -1,0 +1,76 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 25% 1fr;
+    grid-template-rows: 50px 1fr 50px;
+    grid-template-areas:
+    "zheader zheader"
+    "znav zmain"
+    "zfooter zfooter"
+    ;
+}
+
+header{
+    grid-area: zheader;
+    background-color: black;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 20px;
+}
+
+ul{
+    /* quitar las viñeta*/
+    list-style: none;
+}
+
+li{
+    margin-bottom: 30px;
+}
+nav{
+    grid-area: znav;
+    background-color: rgb(219, 236, 228);
+    color: brown;
+    padding-top: 50px;
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+main{
+    grid-area: zmain;
+    background-color: rgb(164, 166, 160);
+    padding-top: 20px;
+    text-align: center;
+    color: white;
+}
+
+footer{
+    grid-area: zfooter;
+    background-color: black;
+    line-height: 50px;
+    text-align: center;
+    padding-right: 10 px;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+header > a{
+    color: white
+}
+
+nav > a{
+    color: black;
+}
+
+img{
+    width: 700px;
+    height: 500px;
+}
